@@ -1,0 +1,31 @@
+[2019-10-13 17:15:00][DEBUG][ERROR] : [Uncaught Error: Call to undefined method App\Utility\Pool\RedisObject::close() in /www/hosts/Basketball/App/Utility/Pool/RedisObject.php:20
+Stack trace:
+#0 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(136): App\Utility\Pool\RedisObject->gc()
+#1 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(163): EasySwoole\Component\Pool\AbstractPool->unsetObj(Object(App\Utility\Pool\RedisObject))
+#2 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(178): EasySwoole\Component\Pool\AbstractPool->gcObject(15)
+#3 {main}
+  thrown at file:/www/hosts/Basketball/App/Utility/Pool/RedisObject.php line:20]
+[2019-10-13 17:15:51][DEBUG][ERROR] : [Uncaught Error: Call to undefined method App\Utility\Pool\RedisObject::close() in /www/hosts/Basketball/App/Utility/Pool/RedisObject.php:20
+Stack trace:
+#0 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(136): App\Utility\Pool\RedisObject->gc()
+#1 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(163): EasySwoole\Component\Pool\AbstractPool->unsetObj(Object(App\Utility\Pool\RedisObject))
+#2 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(178): EasySwoole\Component\Pool\AbstractPool->gcObject(15)
+#3 {main}
+  thrown at file:/www/hosts/Basketball/App/Utility/Pool/RedisObject.php line:20]
+[2019-10-13 17:41:19][DEBUG][ERROR] : [Uncaught Error: Call to undefined method App\Utility\Pool\RedisObject::close() in /www/hosts/Basketball/App/Utility/Pool/RedisObject.php:20
+Stack trace:
+#0 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(136): App\Utility\Pool\RedisObject->gc()
+#1 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(163): EasySwoole\Component\Pool\AbstractPool->unsetObj(Object(App\Utility\Pool\RedisObject))
+#2 /www/hosts/Basketball/vendor/easyswoole/component/src/Pool/AbstractPool.php(178): EasySwoole\Component\Pool\AbstractPool->gcObject(15)
+#3 {main}
+  thrown at file:/www/hosts/Basketball/App/Utility/Pool/RedisObject.php line:20]
+[2019-10-13 18:21:33][DEBUG][ERROR] : [Swoole\Server::start(): failed to start server. Error: swServer_start_check: onTask event callback must be set at file:/www/hosts/Basketball/vendor/easyswoole/easyswoole/src/ServerManager.php line:120]
+[2019-10-13 18:24:35][DEBUG][ERROR] : [Uncaught Error: Call to undefined method Swoole\Http\Server::onTask() in /www/hosts/Basketball/EasySwooleEvent.php:38
+Stack trace:
+#0 /www/hosts/Basketball/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /www/hosts/Basketball/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /www/hosts/Basketball/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /www/hosts/Basketball/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /www/hosts/Basketball/easyswoole(20): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/www/hosts/Basketball/EasySwooleEvent.php line:38]
